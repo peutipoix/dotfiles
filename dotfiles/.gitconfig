@@ -1,0 +1,27 @@
+[user]
+	name = Olivier Mouchet
+	email = mouchet@pv.com
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	up = rebase
+	ci = commit
+	unstage = reset HEAD
+	ru = remote update --prun
+[credential "https://stash.pv.com"]
+        username = mouchet
+[color]
+	ui = true
+[branch]
+	autosetuprebase = always
+#[diff]
+#	external = /home/pv/sandbox/diff.py
+[core]
+	excludesfile = autobuild_version.h
+[status]
+	showUntrackedFiles = no
+[help]
+	autocorrect = 1
+[push]
+	default = current
