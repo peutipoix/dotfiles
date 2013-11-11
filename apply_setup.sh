@@ -7,9 +7,9 @@ DF_DIR=${PWD}/dotfiles
 for df in \
 	.gitconfig \
 	.vimrc \
+	.vim
 	.bashrc \
-	.bashrc.d \
-; do
+	.bashrc.d ; do
 	if [ -e ${HOME}/${df} ]; then
 		mv ${HOME}/${df} ${HOME}/${df}.orig
 		ln -s ${DF_DIR}/${df} ${HOME}/${df}
