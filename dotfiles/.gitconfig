@@ -6,9 +6,13 @@
 	co = checkout
 	br = branch
 	up = rebase
-	ci = commit
-	unstage = reset HEAD
-	ru = remote update --prun
+	co = commit
+	ustg = reset HEAD
+	ru = remote update --prune
+	pl = pull
+	ps = push
+	cl = clone
+	df = diff
 [credential "https://stash.pv.com"]
         username = mouchet
 [color]
