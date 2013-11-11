@@ -116,11 +116,7 @@ if [ -r ~/.bashrc.d/bashrc_aliases ]; then
         source ~/.bashrc.d/bashrc_aliases
 fi
 
-#cavium SDK build
-export CRISP_RELEASE="/home/pv/sandbox/cavium/crisprelease"
-export CNC_PLATFORM="/home/pv/sandbox/cavium/6611L_TMS_256"
-export BUILDROOT_DL_DIR="/home/pv/sandbox/cavium/brtarfiles"
-export PATH="${PATH}:${CRISP_RELEASE}/buildroot/output/host/opt/ext-toolchain/bin:${CRISP_RELEASE}/tools/bin"
-
-# coverity
-export PATH="${PATH}:/home/pv/sandbox/cov-analysis-linux-6.6.1/bin/"
+# Global exports
+if [ -r ~/.bashrc.d/bashrc_exports ]; then
+        source ~/.bashrc.d/bashrc_exports
+fi
