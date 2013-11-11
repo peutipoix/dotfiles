@@ -34,8 +34,8 @@ set wildmode=longest:full
 set wildmenu
 
 " vim-git plugin
-set laststatus=2
-set statusline=%{GitBranch()}
+"set laststatus=2
+"set statusline=%{GitBranch()}
 
 " Install OmniCppComplete like described on http://vim.wikia.com/wiki/C++_code_completion
 " This offers intelligent C++ completion when typing '.' '->' or <C-o>
