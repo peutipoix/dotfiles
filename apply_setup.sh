@@ -7,7 +7,8 @@ DF_DIR=${PWD}/dotfiles
 for df in \
 	.gitconfig \
 	.vimrc \
-	.vim
+	.viminfo \
+	.vim \
 	.bashrc \
 	.bashrc.d ; do
 	if [ -e ${HOME}/${df} ]; then
