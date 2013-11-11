@@ -12,7 +12,7 @@ for df in \
 	.bashrc \
 	.bashrc.d ; do
 	if [ -e ${HOME}/${df} ]; then
-		mv ${HOME}/${df} ${HOME}/${df}.orig
+		[ ! -e ${HOME}/${df}.orig ] && mv ${HOME}/${df} ${HOME}/${df}.orig
 		ln -s ${DF_DIR}/${df} ${HOME}/${df}
 		[ $? -eq 0 ] && echo "setup successfully ${df}"
 	fi
