@@ -33,6 +33,6 @@ alias orly="ssh root@192.168.1.10"
 alias dos2unix=’fromdos’;
 alias unix2dos=’todos’;
 
-alias raspi1="ssh pi@raspi-1"
-alias raspi2="ssh pi@raspi-2"
+alias raspi1="ssh pi@raspi1"
+alias raspi2="ssh pi@raspi2"
 
