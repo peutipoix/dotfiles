@@ -3,16 +3,22 @@
 	email = mouchet@pv.com
 [alias]
 	st = status
+	sth = stash
+	sthl = stash list
+	sthp = stash pop
+	stha = stash apply
 	co = checkout
 	br = branch
 	up = rebase
-	co = commit
-	ustg = reset HEAD
+	ci = commit
+	ust = reset HEAD
 	ru = remote update --prune
 	pl = pull
+	plr = pull --rebase
 	ps = push
 	cl = clone
 	df = diff
+	dfc = diff --cached
 [credential "https://stash.pv.com"]
         username = mouchet
 [color]

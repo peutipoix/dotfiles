@@ -35,4 +35,6 @@ alias unix2dos=’todos’;
 
 alias raspi1="ssh pi@raspi1"
 alias raspi2="ssh pi@raspi2"
-
+alias raspeutipoix="ssh peutipoix@peutipoix.no-ip.biz"
+alias mount-raspeutipoix="sshfs -oidmap=user,reconnect peutipoix@peutipoix.no-ip.biz:/home/peutipoix /media/raspeutipoix"
+alias umount-raspeutipoix="fusermount -u /media/raspeutipoix"
