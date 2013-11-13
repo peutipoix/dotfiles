@@ -7,6 +7,7 @@
 	sthl = stash list
 	sthp = stash pop
 	stha = stash apply
+	sths = stash apply
 	co = checkout
 	br = branch
 	up = rebase
@@ -19,6 +20,7 @@
 	cl = clone
 	df = diff
 	dfc = diff --cached
+	cp = cherry-pick
 [credential "https://stash.pv.com"]
         username = mouchet
 [color]
@@ -34,4 +36,4 @@
 [help]
 	autocorrect = 1
 [push]
-	default = current
+	default = upstream
