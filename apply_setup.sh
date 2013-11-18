@@ -11,9 +11,7 @@ for df in \
 	.vim \
 	.bashrc \
 	.bashrc.d ; do
-	if [ -e ${HOME}/${df} ]; then
-		[ ! -e ${HOME}/${df}.orig ] && mv ${HOME}/${df} ${HOME}/${df}.orig
-		ln -s ${DF_DIR}/${df} ${HOME}/${df}
-		[ $? -eq 0 ] && echo "setup successfully ${df}"
-	fi
+	[ -e ${HOME}/${df} ] && [ ! -h ${HOME}/${df} ] && [ ! -e ${HOME}/${df}.orig ] && mv ${HOME}/${df} ${HOME}/${df}.orig
+	ln -s ${DF_DIR}/${df} ${HOME}/${df}
+	[ $? -eq 0 ] && echo "setup successfully ${df}"
 done
