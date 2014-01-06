@@ -2,25 +2,28 @@
 	name = Olivier Mouchet
 	email = mouchet@pv.com
 [alias]
-	st = status
-	sth = stash
+	adu  = add -u
+	st   = status
+	sth  = stash
 	sthl = stash list
 	sthp = stash pop
 	stha = stash apply
 	sths = stash apply
-	co = checkout
-	br = branch
-	up = rebase
-	ci = commit
-	ust = reset HEAD
-	ru = remote update --prune
-	pl = pull
-	plr = pull --rebase
-	ps = push
-	cl = clone
-	df = diff
-	dfc = diff --cached
-	cp = cherry-pick
+	co   = checkout
+	br   = branch
+	bra  = branch --all
+	brr  = branch --remotes
+	up   = rebase
+	ci   = commit
+	ust  = reset HEAD
+	ru   = remote update --prune
+	pl   = pull
+	plr  = pull --rebase
+	ps   = push
+	cl   = clone
+	df   = diff
+	dfc  = diff --cached
+	cp   = cherry-pick
 [credential "https://stash.pv.com"]
         username = mouchet
 [color]
