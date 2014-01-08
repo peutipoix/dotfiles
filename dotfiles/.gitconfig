@@ -25,10 +25,8 @@
         username = mouchet
 [color]
 	ui = true
-[branch]
-	autosetuprebase = always
 #[diff]
-#	external = /home/pv/sandbox/diff.py
+#	external = ${HOME}/.git-external-diff.py
 [core]
 	excludesfile = autobuild_version.h
 [status]
@@ -37,3 +35,4 @@
 	autocorrect = 1
 [push]
 	default = upstream
+
