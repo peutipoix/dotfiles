@@ -1,3 +1,9 @@
+# Global aliases
+if [ -r ~/.bashrc.d/bashrc_aliases ]; then
+	source ~/.bashrc.d/bashrc_aliases_pv
+fi
+
+
 alias la='ls -alF'
 alias ll='ls -lF'
 alias la='ls -alF'
@@ -20,21 +26,3 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-#alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-alias pvcore="pushd ${HOME}/accworkspaces/pvdev_twonkymedia_core_twonkytuner_1210/dlna/twonky/src/"
-#alias stcore="sudo su && pushd /root/STmicro/SDK2-05.0/STLinux-2.4/devkit/build/"
-#alias deploytuner="pvcore && rm -rf server/tuner/twonkytuner/obj-* && make TWONKYTUNER=1 DEBUG=1 EMBEDDED=armv7_gcc462_glibc2102_eabi OEM=1 && sudo cp ../distributions/today/embedded/armv7_gcc462_glibc2102_eabi_oem/{twonkytuner,twonkyserver} /stmicro_nfs/root/twonky/. && popd"
-alias mycurrentip="/sbin/ifconfig 'eth0' | grep 'inet addr' | cut -d ' ' -f 12 | sed -e 's,addr:,,g'"
-#alias stmock="cd /mnt/home-unbuntu1104/pv/STmicro/SDK2-6.1.3 && sudo mock --uniqueext=ORLY_PV17 -r fedora-17-x86_64 --shell"
-alias myumount="sudo umount /media/stber01_install /opt/environments /media/stber01_engineeringpub /media/stber03_testcontent /media/stber03_engineering"
-alias orly="ssh root@192.168.1.10"
-alias dos2unix=’fromdos’;
-alias unix2dos=’todos’;
-
-alias raspi1="ssh pi@raspi1"
-alias raspi2="ssh pi@raspi2"
-alias raspeutipoix="ssh peutipoix@peutipoix.no-ip.biz"
-alias mount-raspeutipoix="sshfs -oidmap=user,reconnect peutipoix@peutipoix.no-ip.biz:/home/peutipoix /media/raspeutipoix"
-alias umount-raspeutipoix="fusermount -u /media/raspeutipoix"
