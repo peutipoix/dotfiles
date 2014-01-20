@@ -1,6 +1,6 @@
 # Global aliases
-if [ -r ~/.bashrc.d/bashrc_aliases ]; then
-	source ~/.bashrc.d/bashrc_aliases_pv
+if [ -e ~/.bashrc.d/bashrc_aliases ]; then
+	[ -e ~/.bashrc.d/bashrc_aliases_pv ] && source ~/.bashrc.d/bashrc_aliases_pv
 fi
 
 
