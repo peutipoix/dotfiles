@@ -26,3 +26,5 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+alias valgrind="valgrind --tool=memcheck --leak-check=yes"
+
