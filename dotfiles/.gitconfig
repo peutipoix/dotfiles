@@ -24,6 +24,7 @@
 	df   = diff
 	dfc  = diff --cached
 	cp   = cherry-pick
+	showf = diff-tree --no-commit-id --name-status -r
 [credential "https://stash.pv.com"]
         username = mouchet
 [color]
