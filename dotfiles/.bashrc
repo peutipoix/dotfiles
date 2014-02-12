@@ -1,7 +1,9 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+export PATH="/usr/lib/colorgcc/bin/:$PATH"    # As per usual colorgcc installation, leave unchanged (don't add ccache)
+export CCACHE_PATH="/usr/bin"                 # Tell ccache to only use compilers here
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -103,3 +105,5 @@ fi
 if [ -r ~/.bashrc.d/bashrc_exports ]; then
         source ~/.bashrc.d/bashrc_exports
 fi
+
+
