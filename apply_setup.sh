@@ -7,6 +7,7 @@ DF_DIR=${PWD}/dotfiles
 [ -e ${DF_DIR}/.vim.tgz ] && [ ! -d ${DF_DIR}/.vim ] && pushd ${DF_DIR} && /bin/tar -xzf .vim.tgz && popd
 
 for df in \
+	.gdbinit \
 	.gitconfig \
 	.vimrc \
 	.viminfo \
