@@ -26,7 +26,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-alias valgrind="valgrind --tool=memcheck --leak-check=yes"
+alias myvalgrind="valgrind --tool=memcheck --leak-check=yes"
 
 alias weekly='git log --author=´whoami´ --since="1 sunday ago"'
 
