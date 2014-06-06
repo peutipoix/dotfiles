@@ -1,4 +1,5 @@
 #!/bin/bash
+# from http://ubuntuforums.org/showthread.php?t=2200866
 
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <destination_path>"
