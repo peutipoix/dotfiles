@@ -25,6 +25,7 @@
 	dfc  = diff --cached
 	cp   = cherry-pick
 	showf = diff-tree --no-commit-id --name-status -r
+	commitdiff =log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 [credential "https://stash.pv.com"]
         username = mouchet
 [color]
@@ -41,3 +42,7 @@
 	default = upstream
 [credential]
 	helper = cache --timeout=36000
+[diff]
+	mnemonicprefix = true
+[merge]
+	stat = true
