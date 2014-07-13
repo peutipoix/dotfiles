@@ -34,6 +34,7 @@
 #	external = ${HOME}/.git-external-diff.py
 [core]
 	excludesfile = autobuild_version.h
+	editor = vim
 [status]
 	showUntrackedFiles = no
 [help]
