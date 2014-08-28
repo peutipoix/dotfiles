@@ -28,5 +28,7 @@ fi
 
 alias myvalgrind="valgrind --tool=memcheck --leak-check=yes"
 
-alias weekly='git log --author=mouchet --since="1 sunday ago"'
+alias myweekly='git log --author=mouchet --since="1 sunday ago"'
+
+alias mycp='rsync -a --info=progress2'
 
