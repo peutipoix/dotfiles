@@ -13,9 +13,10 @@ for df in \
 	.viminfo \
 	.vim \
 	.bashrc \
+	.config/sublime-text-3/Packages/User/Default\ \(Linux\).sublime-keymap \
 	.bashrc.d ; do
-	[ -e ${HOME}/${df} ] && [ ! -h ${HOME}/${df} ] && [ ! -e ${HOME}/${df}.orig ] && mv ${HOME}/${df} ${HOME}/${df}.orig
-	ln -s ${DF_DIR}/${df} ${HOME}/${df}
+	[ -e "${HOME}/${df}" ] && [ ! -h "${HOME}/${df}" ] && [ ! -e "${HOME}/${df}.orig" ] && mv "${HOME}/${df}" "${HOME}/${df}.orig"
+	ln -s "${DF_DIR}/${df}" "${HOME}/${df}"
 	[ $? -eq 0 ] && echo "setup successfully ${df}"
 done
 
