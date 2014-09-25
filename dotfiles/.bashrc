@@ -106,4 +106,8 @@ if [ -r ~/.bashrc.d/bashrc_exports ]; then
         source ~/.bashrc.d/bashrc_exports
 fi
 
+# Add RVM to PATH for scripting
+if [ -d "$HOME/.rvm/bin" ]; then
+	export PATH="$PATH:$HOME/.rvm/bin"
+fi
 
