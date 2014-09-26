@@ -32,3 +32,5 @@ alias myweekly='git log --author=mouchet --since="1 sunday ago"'
 
 alias mycp='rsync -a --info=progress2'
 
+alias myctags='ctags -R -f .tags'
+
