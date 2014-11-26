@@ -111,3 +111,4 @@ if [ -d "$HOME/.rvm/bin" ]; then
 	export PATH="$PATH:$HOME/.rvm/bin"
 fi
 
+export MYTSAPPDATA="${HOME}/.twonky/twonkyserver"
