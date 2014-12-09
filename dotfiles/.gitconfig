@@ -20,7 +20,8 @@
 	pl   = pull
 	plr  = pull --rebase
 	ps   = push
-	cl   = clone
+	cl   = clean
+	clx  = clean -xdf
 	df   = diff
 	dfc  = diff --cached
 	cp   = cherry-pick
