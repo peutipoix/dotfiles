@@ -34,5 +34,7 @@ alias mycp='rsync -a --info=progress2'
 
 alias myctags='ctags -R -f .tags'
 
-alias mytscleanandstart='rm -rf "${MYAPPDATA}/db/*" "${MYTSAPPDATA}/twonky-locations-*.db" "${MYTSAPPDATA}/pdb/*" ./resources && ln -s ../../../src/appdata/resources ./resources && ./twonkyserver -secure_folder_path /tmp -appdata "${MYTSAPPDATA}" -importscantime 2'
-
+myfct_removetag() {
+	git tag -d $1 && git push origin :refs/tags/$1
+}
+alias myrmtag='myfct_removetag'
