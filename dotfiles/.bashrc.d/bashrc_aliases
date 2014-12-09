@@ -38,3 +38,5 @@ myfct_removetag() {
 	git tag -d $1 && git push origin :refs/tags/$1
 }
 alias myrmtag='myfct_removetag'
+
+alias mytwonkyionice="for pid in $(ps -eLf | grep twonky | awk '{ print $4; }'); do echo -n '$pid - '; ionice -p ${pid}; done"
