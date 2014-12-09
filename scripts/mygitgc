@@ -1,0 +1,9 @@
+#/bin/sh
+CUR=$PWD
+
+for gitrepo in ${HOME}/GIT/*; do
+	[ -d $gitrepo ] || continue;
+	cd $gitrepo
+	git gc
+done
+cd $CUR
