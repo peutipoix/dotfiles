@@ -1,7 +1,7 @@
 #/bin/sh
+set -x
 CUR=$PWD
-
-for gitrepo in ${HOME}/GIT/*; do
+for gitrepo in /${HOME}/GIT/*; do
 	if [ -d $gitrepo ]; then
 		cd $gitrepo
 		git gc 2>/dev/null 1>/dev/null
@@ -9,3 +9,4 @@ for gitrepo in ${HOME}/GIT/*; do
 	fi
 done
 cd $CUR
+exit 0
