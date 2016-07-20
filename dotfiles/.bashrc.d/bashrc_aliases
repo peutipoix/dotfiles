@@ -42,3 +42,6 @@ alias myrmtag='myfct_removetag'
 alias mytwonkyionice="for pid in $(ps -eLf | grep twonky | awk '{ print $4; }'); do echo -n '$pid - '; ionice -p ${pid}; done"
 
 alias mygitgc="/home/mouchet/GIT/dotfiles/scripts/mygitgc"
+
+alias myskype="LD_PRELOAD=/usr/lib/i386-linux-gnu/libv4l/v4l1compat.so /usr/bin/skype"
+
