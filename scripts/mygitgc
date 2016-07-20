@@ -4,7 +4,7 @@ CUR=$PWD
 for gitrepo in /${HOME}/GIT/*; do
 	if [ -d $gitrepo ]; then
 		cd $gitrepo
-		git gc 2>/dev/null 1>/dev/null
+		git gc --auto 2>/dev/null 1>/dev/null
 		logger -s "[$(date)] Git gc ran on ${gitrepo} => rc $?"
 	fi
 done
