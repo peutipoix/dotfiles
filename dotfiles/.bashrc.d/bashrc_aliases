@@ -3,7 +3,6 @@ if [ -e ~/.bashrc.d/bashrc_aliases ]; then
 	[ -e ~/.bashrc.d/bashrc_aliases_pv ] && source ~/.bashrc.d/bashrc_aliases_pv
 fi
 
-
 alias la='ls -alF'
 alias ll='ls -lF'
 alias la='ls -alF'
@@ -26,7 +25,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-alias myvalgrind="valgrind --tool=memcheck --leak-check=yes"
+alias myvalgrind="valgrind --tool=memcheck --track-origins=yes --trace-children=yes --leak-check=full --show-reachable=yes --leak-resolution=high -v --log-file=valgrind-%p.txt"
 
 alias myweekly='git log --author=mouchet --since="1 sunday ago"'
 
@@ -43,5 +42,13 @@ alias mytwonkyionice="for pid in $(ps -eLf | grep twonky | awk '{ print $4; }');
 
 alias mygitgc="/home/mouchet/GIT/dotfiles/scripts/mygitgc"
 
-alias myskype="LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libv4l/v4l1compat.so /usr/bin/skype"
+alias myskype="LD_PRELOAD=/usr/lib/i386-linux-gnu/libv4l/v4l1compat.so /usr/bin/skype"
+alias mymake="make COLORGCC=1 DEBUG=1 ENABLE_PARALLEL_BUILD=1"
 
+alias ssh-dss="ssh -oHostKeyAlgorithms=+ssh-dss"
+alias scp-dss="scp -oHostKeyAlgorithms=+ssh-dss"
+
+myfct_replace() {
+	"find $1 -type f -print0 | xargs -0 sed -i 's/${2}/${3}/g"
+}
+alias myreplace="myfct_replace"

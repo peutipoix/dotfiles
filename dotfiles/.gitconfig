@@ -1,6 +1,6 @@
 [user]
 	name = Olivier Mouchet
-	email = mouchet@pv.com
+	email = mouchet@lynxtechnology.com
 [alias]
 	adu  = add -u
 	st   = status
@@ -27,7 +27,7 @@
 	cp   = cherry-pick
 	showf = diff-tree --no-commit-id --name-status -r
 	commitdiff =log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-[credential "https://stash.pv.com"]
+[credential "https://stash.twonky.com"]
         username = mouchet
 [color]
 	ui = true
