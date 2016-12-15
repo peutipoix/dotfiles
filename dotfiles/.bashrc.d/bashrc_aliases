@@ -43,12 +43,18 @@ alias mytwonkyionice="for pid in $(ps -eLf | grep twonky | awk '{ print $4; }');
 alias mygitgc="/home/mouchet/GIT/dotfiles/scripts/mygitgc"
 
 alias myskype="LD_PRELOAD=/usr/lib/i386-linux-gnu/libv4l/v4l1compat.so /usr/bin/skype"
-alias mymake="make COLORGCC=1 DEBUG=1 ENABLE_PARALLEL_BUILD=1"
+alias mymake="make COLORGCC=1 NO_LICENSE=1 DEBUG=1" # ENABLE_PARALLEL_BUILD=1"
 
 alias ssh-dss="ssh -oHostKeyAlgorithms=+ssh-dss"
 alias scp-dss="scp -oHostKeyAlgorithms=+ssh-dss"
 
 myfct_replace() {
-	"find $1 -type f -print0 | xargs -0 sed -i 's/${2}/${3}/g"
+	find $1 -type f -print0 | xargs -0 sed -i "s/${2}/${3}/g"
 }
 alias myreplace="myfct_replace"
+myfct_replace2() {
+        find $1 -type f -print0 | xargs -0 sed -i "s,${2},${3},g"
+}
+alias myreplace2="myfct_replace2"
+
+

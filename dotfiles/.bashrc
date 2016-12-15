@@ -3,6 +3,7 @@
 
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/lib/colorgcc/bin/:$PATH"    # As per usual colorgcc installation, leave unchanged (don't add ccache)
+export PATH=${PATH}:${HOME}/sandbox/android-sdk-linux/tools:${HOME}/sandbox/android-sdk-linux/platform-tools
 export CCACHE_PATH="/usr/bin"                 # Tell ccache to only use compilers here
 
 # don't put duplicate lines or lines starting with space in the history.
