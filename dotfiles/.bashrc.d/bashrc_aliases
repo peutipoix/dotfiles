@@ -43,7 +43,7 @@ alias mytwonkyionice="for pid in $(ps -eLf | grep twonky | awk '{ print $4; }');
 alias mygitgc="/home/mouchet/GIT/dotfiles/scripts/mygitgc"
 
 alias myskype="LD_PRELOAD=/usr/lib/i386-linux-gnu/libv4l/v4l1compat.so /usr/bin/skype"
-alias mymake="make COLORGCC=1 NO_LICENSE=1 DEBUG=1" # ENABLE_PARALLEL_BUILD=1"
+alias mymake="make COLORGCC=1 DEBUG=1" # ENABLE_PARALLEL_BUILD=1"
 
 alias ssh-dss="ssh -oHostKeyAlgorithms=+ssh-dss"
 alias scp-dss="scp -oHostKeyAlgorithms=+ssh-dss"
