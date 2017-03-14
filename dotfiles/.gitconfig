@@ -48,3 +48,5 @@
 	mnemonicprefix = true
 [merge]
 	stat = true
+[pull]
+	rebase = true
